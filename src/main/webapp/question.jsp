@@ -13,15 +13,7 @@
     <link rel="stylesheet" href="css/question.css">
 </head>
 <body>
-<%--<h1>Addition Quiz Status : ${countCorrectAnswer}/${countTotal}</h1>--%>
-<c:choose>
-    <c:when test="${not empty countCorrect}">
-        <h1>Addition Quiz Status : ${countCorrect}/${countTotal}</h1>
-    </c:when>
-    <c:otherwise>
-        <h1>Addition Quiz Status : ${countCorrectAnswer}/${countTotal}</h1>
-    </c:otherwise>
-</c:choose>
+<h1>Addition Quiz Status : ${countCorrectAnswer}/${countTotal}</h1>
 <form action="QuestionServlet" method="post">
     <label>
         What is ${num1} + ${num2} =
